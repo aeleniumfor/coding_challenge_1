@@ -1,7 +1,5 @@
-# coding_challenge_1
-
 # golang version
-1.9.0
+1.10.2
 
 # docker
 ### 使用したdocker image
