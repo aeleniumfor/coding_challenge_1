@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"net/http"
+	"bytes"
 )
 
 type Hello struct {
@@ -19,7 +20,10 @@ func main() {
 func handler(w http.ResponseWriter, r *http.Request) {
 	//内部処理
 	msg := Hello{"Hello World!!"}
-	json_s, _ := json.Marshal(msg)
+	json_indet := new(bytes.Buffer)
+	json_string, _ := json.Marshal(&msg)
+
+	json.Indent(json_indet, json_string, "", "  ")     //jsonを整形
 	w.Header().Set("Content-Type", "application/json") //ヘッダ情報付加
-	fmt.Fprint(w, string(json_s))
+	fmt.Fprint(w, json_indet.String())
 }
