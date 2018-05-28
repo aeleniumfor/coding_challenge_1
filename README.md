@@ -8,7 +8,7 @@ $ go verison
 ### docker
 ```
 $ docker -v
-# go version go1.10.2 linux/amd64
+# Docker version 18.05.0-ce, build f150324
 ```
 
 # Image
