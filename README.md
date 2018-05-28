@@ -7,7 +7,7 @@
 golang:latest
 ```
 
-### docker file
+### ビルドと実行
 ```docker:docker_file
 $ docker build -t golang_app .
 $ docker run -p 80:8080 --rm golang_app
