@@ -1,27 +1,19 @@
-# Version
-### golang
-```
-$ go verison
-# go version go1.10.2 linux/amd64
-```
+## Description
+Docker を用いて、 "Hello world" というメッセージ を JSON 形式で返す API 
+- http://153.122.97.129/
 
-### docker
-```
-$ docker -v
-# Docker version 18.05.0-ce, build f150324
-```
-
-# Image
-
-### 使用したdocker image
+##URL
+http://153.122.97.129/
+##### 使用したdocker image
 ```docker
 golang:latest
 ```
+## Usage
 
-
-# Usage
 ### build and run
-```docker:docker_file
+```docker:
+$ git clone https://github.com/aeleniumfor/coding_challenge_1.git
+$ cd coding_challenge_1
 $ docker build -t golang_app .
 $ docker run -d -p 8080:8080 --rm golang_app
 ```
