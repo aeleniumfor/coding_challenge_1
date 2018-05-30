@@ -2,8 +2,8 @@
 Docker を用いて、 "Hello world" というメッセージ を JSON 形式で返す API 
 - http://153.122.97.129/
 
-##URL
-http://153.122.97.129/
+##DEMO
+ - http://153.122.97.129/
 ##### 使用したdocker image
 ```docker
 golang:latest
