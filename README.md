@@ -1,8 +1,7 @@
 ## Description
 Docker を用いて、 "Hello world" というメッセージ を JSON 形式で返す API 
-- http://153.122.97.129/
 
-##DEMO
+## DEMO
  - http://153.122.97.129/
 ##### 使用したdocker image
 ```docker
